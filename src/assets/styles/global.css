@@ -72,6 +72,10 @@ p {
     animation: rotate 3s linear infinite;
 }
 
+.time-islamic {
+    font-size: 1.0rem;
+    color: #777;
+}
 
 @keyframes rotate {
     0% {

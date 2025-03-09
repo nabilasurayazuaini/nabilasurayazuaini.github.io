@@ -22,7 +22,7 @@ export const home = () => {
         </time>
         <br/>
         <br/>
-        <span>6 Zulkaedah 1446H</span>`;
+        <span class="time-islamic">6 Zulkaedah 1446H</span>`;
     };
 
     const generateCountdownMarkup = (days, hours, minutes, seconds) => {
