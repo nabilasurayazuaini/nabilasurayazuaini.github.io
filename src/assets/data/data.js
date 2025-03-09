@@ -48,12 +48,10 @@ export const data = {
 
     link: {
         calendar: 'https://calendar.app.google/oSVLRMYC79GzuA4f9',
-        map: 'https://waze.com/ul/hw283fnusu',
-            // Waze
-            // https://waze.com/ul/hw283fnusu
-
-            // Google Maps
-            // https://maps.app.goo.gl/G75Fj1X2ThC4C7u39
+        map: {
+            waze : 'https://waze.com/ul/hw283fnusu',
+            googlemap : 'https://maps.app.goo.gl/G75Fj1X2ThC4C7u39',
+        }
     },
 
     galeri: [
@@ -95,38 +93,32 @@ export const data = {
     ],
 
     audio: './src/assets/audio/wedding.mp3',
-    api: 'https://script.google.com/macros/s/AKfycbyEz9M4SnzSCscTRKw90AYkzMJm7PSlL5Z_h09DEiUW3gKZEJItVapwzidkf9UBDBL0qw/exec',
+    api: 'https://script.google.com/macros/s/AKfycbz95ix3H07FnYnKtOG84LVGpio45COp_AfOLreFTnfcb-zChjhhnZ-YpvGzsvwr8lWj3w/exec',
     // api: 'https://script.google.com/macros/s/AKfycbyN5DbnY_PpaBrVHdKcqdGfKPZPj5FE-I9Q62BuW6lOZFCIs5HCKc0HSJh1XgHyiOheWQ/exec',
     // api: 'https://script.google.com/macros/s/AKfycbyydz6N4p2VWUG8zsXeURv6ap9RP8a4eC3x6N3x6qTDjMVr1cIBz9S0NsHw2rWvBOSXGg/exec',
 
     navbar: [
         {
             id: 1,
-            teks: 'Home',
+            teks: 'Utama',
             icon: 'bx bxs-home-heart',
             path: '#home',
         },
         {
             id: 2,
-            teks: 'Mempelai',
+            teks: 'Pengantin',
             icon: 'bx bxs-group',
             path: '#bride',
         },
         {
             id: 3,
-            teks: 'Tanggal',
+            teks: 'Waktu',
             icon: 'bx bxs-calendar-check',
             path: '#time',
         },
         {
             id: 4,
-            teks: 'Galeri',
-            icon: 'bx bxs-photo-album',
-            path: '#galeri',
-        },
-        {
-            id: 5,
-            teks: 'Ucapan',
+            teks: 'RSVP',
             icon: 'bx bxs-message-rounded-dots',
             path: '#wishas',
         },
