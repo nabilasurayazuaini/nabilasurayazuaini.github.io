@@ -81,6 +81,9 @@
 .wishas div:nth-of-type(2) > form input,
 .wishas div:nth-of-type(2) > form select,
 .wishas div:nth-of-type(2) > form textarea {
+    appearance: none;
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none;    /* For Firefox */    
     width: 100%;
     padding: 0.6rem 1rem;
     border-radius: 5px;

@@ -112,7 +112,7 @@ export const data = {
         },
         {
             id: 3,
-            teks: 'Waktu',
+            teks: 'Masa',
             icon: 'bx bxs-calendar-check',
             path: '#time',
         },

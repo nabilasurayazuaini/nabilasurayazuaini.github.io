@@ -1,0 +1,13 @@
+# macOS System files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS specific directory
+__MACOSX/
+
+# Thumbnails and quicklook cache
+._*
+
+# Other macOS metadata
+*.swp
