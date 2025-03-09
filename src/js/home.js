@@ -19,7 +19,10 @@ export const home = () => {
         return `
         <time datetime="${year}-${String(monthNameToNumber(month)).padStart(2, '0')}-${String(date).padStart(2, '0')}">
             ${day}, ${date} ${month} ${year}
-        </time>`;
+        </time>
+        <br/>
+        <br/>
+        <span>6 Zulkaedah 1446H</span>`;
     };
 
     const generateCountdownMarkup = (days, hours, minutes, seconds) => {
