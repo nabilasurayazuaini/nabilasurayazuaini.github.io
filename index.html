@@ -195,23 +195,30 @@
         </div>
 
         <div data-aos="zoom-in" data-aos-duration="1000">
-            <h2>Ucapan & Doa</h2>
+            <h2>RSVP</h2>
             <form>
                 <label for="name">Nama</label>
                 <input type="text" name="name" id="name" placeholder="Nama anda" autoComplete="off" required/>
                 <label for="name">Telefon</label>
-                <input type="text" name="telefon" id="telefon" placeholder="Telefon anda" autoComplete="off" required/>
+                <input type="text" name="phone" id="phone" placeholder="Telefon anda" autoComplete="off" required/>
                 <label for="status">Kehadiran</label>
                 <select name="status" id="status" required aria-required="true">
                     <option value="" disabled selected>Kehadiran</option>
                     <option value="y">Hadir</option>
                     <option value="n">Tidak Hadir</option>
                 </select>
-                <label for="message">Ucapan & Doa</label>
+                <label for="status">Jumlah Kehadiran</label>
+                <select name="pax" id="pax" required aria-required="true">
+                    <option value="" disabled selected>Jumlah kehadiran</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+
+                <label for="message">Ucapan</label>
                 <textarea
                         name="message"
                         id="message"
-                        placeholder="Tulis ucapan & Doa"
+                        placeholder="Tulis ucapan"
                         required
                         minlength="8"
                 ></textarea>
