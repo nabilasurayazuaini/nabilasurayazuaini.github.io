@@ -2,51 +2,58 @@ export const data = {
     bride: {
         L: {
             id: 1,
-            name: 'Lorem Ipsum',
-            child: 'Putra ke lorem',
-            father: 'Lorem',
-            mother: 'Ipsum',
-            image: './src/assets/images/cowo.png'
+            alias: 'Faiz',
+            name: 'Muhammad Faiz bin Mazlan',
+            child: 'Putera Pertama',
+            father: 'Mazlan bin Mahmud',
+            mother: 'Tuan Nurlaili binti Tuan Mat',
+            image: './src/assets/images/groom.jpeg'
         },
         P: {
             id: 2,
-            name: 'Ipsum Lorem',
-            child: 'Putri ke lorem',
-            father: 'Lorem',
-            mother: 'Ipsum',
-            image: './src/assets/images/cewe.png'
+            alias: 'Nabila',
+            name: 'Nabila Suraya binti Zuaini',
+            child: 'Puteri Pertama',
+            father: 'Allahyarham Zuaini bin Akin',
+            mother: 'Norazan binti Sidek',
+            image: './src/assets/images/bride.jpeg'
         },
 
-        couple: './src/assets/images/couple.png'
+        couple: './src/assets/images/couple.jpeg'
     },
 
     time: {
         marriage: {
-            year: '2030',
-            month: 'November',
-            date: '14',
-            day: 'Kamis',
+            year: '2025',
+            month: 'May',
+            date: '3',
+            day: 'Sabtu',
             hours: {
-                start: '08.00',
-                finish: 'Selesai'
+                start: '9:00 AM',
+                finish: '11:00 AM'
             }
         },
         reception: {
-            year: '2024',
-            month: 'November',
-            date: '14',
-            day: 'Kamis',
+            year: '2025',
+            month: 'May',
+            date: '3',
+            day: 'Sabtu',
             hours: {
-                start: '11.00',
-                finish: 'Selesai'
+                start: '8:00 PM',
+                finish: '11:00 PM'
             }
         },
-        address: 'Kp. Lorem, RT 000/ RW 000, Desa.Lorem, Kec.Ipsum, Kab.Lorem, Lorem (1234)'
+        address: 'Premiera Hotel Kuala Lumpur'
     },
 
     link: {
         calendar: 'https://calendar.app.google/oSVLRMYC79GzuA4f9',
-        map: 'https://maps.app.goo.gl/q1Ask2Jgd4ekiiKBA',
+        map: 'https://maps.app.goo.gl/G75Fj1X2ThC4C7u39',
+            // Waze
+            // https://waze.com/ul/hw283fnusu
+
+            // Google Maps
+            // https://maps.app.goo.gl/G75Fj1X2ThC4C7u39
     },
 
     galeri: [
@@ -88,8 +95,8 @@ export const data = {
     ],
 
     audio: './src/assets/audio/wedding.mp3',
-
-    api: 'https://script.google.com/macros/s/AKfycbyydz6N4p2VWUG8zsXeURv6ap9RP8a4eC3x6N3x6qTDjMVr1cIBz9S0NsHw2rWvBOSXGg/exec',
+    api: 'https://script.google.com/macros/s/AKfycbyN5DbnY_PpaBrVHdKcqdGfKPZPj5FE-I9Q62BuW6lOZFCIs5HCKc0HSJh1XgHyiOheWQ/exec',
+    // api: 'https://script.google.com/macros/s/AKfycbyydz6N4p2VWUG8zsXeURv6ap9RP8a4eC3x6N3x6qTDjMVr1cIBz9S0NsHw2rWvBOSXGg/exec',
 
     navbar: [
         {
