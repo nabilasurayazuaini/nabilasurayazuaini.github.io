@@ -48,7 +48,7 @@ export const data = {
 
     link: {
         calendar: 'https://calendar.app.google/oSVLRMYC79GzuA4f9',
-        map: 'https://maps.app.goo.gl/G75Fj1X2ThC4C7u39',
+        map: 'https://waze.com/ul/hw283fnusu',
             // Waze
             // https://waze.com/ul/hw283fnusu
 
