@@ -6,14 +6,21 @@ export const bride = () => {
     const brideListItem = (data) => (
         `<li data-aos="zoom-in" data-aos-duration="1000">
               <figure>
-                   <img src=${data.image} alt="${data.name} animation">
                    <figcaption>${data.name}</figcaption>
               </figure>
-              <p>${data.child} <br/> ${data.father} & ${data.mother}</p>
               <span style="display: ${data.id === 1 ? 'none' : 'block'}">&</span>
         </li>`
     )
-
+    // const brideListItem = (data) => (
+    //     `<li data-aos="zoom-in" data-aos-duration="1000">
+    //           <figure>
+    //                <img src=${data.image} alt="${data.name} animation">
+    //                <figcaption>${data.name}</figcaption>
+    //           </figure>
+    //           <p>${data.child} <br/> ${data.father} & ${data.mother}</p>
+    //           <span style="display: ${data.id === 1 ? 'none' : 'block'}">&</span>
+    //     </li>`
+    // )
     // const brideData = [data.bride.L, data.bride.P];
     const brideData = [data.bride.P, data.bride.L];
 

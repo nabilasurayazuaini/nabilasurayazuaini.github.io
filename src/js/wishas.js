@@ -60,7 +60,7 @@ export const wishas = () => {
             lengthComentar = comentar.length;
             comentar.reverse();
 
-            peopleComentar.textContent = comentar.length > 0 ? `${comentar.length} Orang telah mengucapkan` : 'Belum ada yang mengucapkan';
+            peopleComentar.textContent = comentar.length > 0 ? `${comentar.length} orang telah mengucapkan` : 'Belum ada yang mengucapkan';
             pageNumber.textContent = '1';
 
             renderElement(comentar.slice(startIndex, endIndex), containerComentar, listItemComentar);
