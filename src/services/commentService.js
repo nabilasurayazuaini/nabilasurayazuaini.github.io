@@ -1,8 +1,8 @@
 import { data } from "../assets/data/data.js";
 
-export const comentarService = {
+export const commentService = {
     // Function to fetch comments
-    getComentar: async function () {
+    getComment: async function () {
         try {
             const response = await fetch(data.api);
             if (!response.ok) {
@@ -15,8 +15,8 @@ export const comentarService = {
     },
 
     // Function to add a new comment
-    addComentar: async function ({ id, name, phone, status, pax, message, date, color }) {
-        const comentar = {
+    addComment: async function ({ id, name, phone, status, pax, message, date, color }) {
+        const comment = {
             id,
             name,
             phone,
@@ -34,7 +34,7 @@ export const comentarService = {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(comentar),
+                body: JSON.stringify(comment),
             });
 
             if (!response.ok) {

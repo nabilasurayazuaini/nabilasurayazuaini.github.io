@@ -93,9 +93,7 @@ export const data = {
     ],
 
     audio: './src/assets/audio/wedding.mp3',
-    api: 'https://script.google.com/macros/s/AKfycbz95ix3H07FnYnKtOG84LVGpio45COp_AfOLreFTnfcb-zChjhhnZ-YpvGzsvwr8lWj3w/exec',
-    // api: 'https://script.google.com/macros/s/AKfycbyN5DbnY_PpaBrVHdKcqdGfKPZPj5FE-I9Q62BuW6lOZFCIs5HCKc0HSJh1XgHyiOheWQ/exec',
-    // api: 'https://script.google.com/macros/s/AKfycbyydz6N4p2VWUG8zsXeURv6ap9RP8a4eC3x6N3x6qTDjMVr1cIBz9S0NsHw2rWvBOSXGg/exec',
+    api: 'https://script.google.com/macros/s/AKfycbyiAYy_Dagj5W6snDp7yD7MFKFRE_Kb8y0l33cn8h473tH9MrUP2jLcOJDvk4ssEDnAPA/exec',
 
     navbar: [
         {
@@ -120,7 +118,7 @@ export const data = {
             id: 4,
             teks: 'RSVP',
             icon: 'bx bxs-message-rounded-dots',
-            path: '#wishas',
+            path: '#wishes',
         },
     ],
 }

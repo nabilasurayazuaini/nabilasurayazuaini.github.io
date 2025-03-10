@@ -7,21 +7,21 @@ import {
     renderElement
 } from "../utils/helper.js";
 import {data} from "../assets/data/data.js";
-import {comentarService} from "../services/comentarService.js";
+import {commentService} from "../services/commentService.js";
 
-export const wishas = () => {
-    const wishasContainer = document.querySelector('.wishas');
-    if (!wishasContainer) return; // Ensure .wishas exists before continuing
+export const wishes = () => {
+    const wishesContainer = document.querySelector('.wishes');
+    if (!wishesContainer) return; // Ensure .wishes exists before continuing
 
-    const form = wishasContainer.children[2]?.children[2];
+    const form = wishesContainer.children[2]?.children[2];
     if (!form) return; // Ensure the form exists
 
-    const [peopleComentar, ___, containerComentar] = wishasContainer.children[3].children;
+    const [peopleComment, ___, containerComment] = wishesContainer.children[3].children;
     const buttonForm = form.children[10];
-    const pageNumber = wishasContainer.querySelector('.page-number');
-    const [prevButton, nextButton] = wishasContainer.querySelectorAll('.button-grup button');
+    const pageNumber = wishesContainer.querySelector('.page-number');
+    const [prevButton, nextButton] = wishesContainer.querySelectorAll('.button-grup button');
 
-    const listItemComentar = (data) => {
+    const listItemComment = (data) => {
         const name = formattedName(data.name);
         const newDate = formattedDate(data.date);
         let date = "";
@@ -46,26 +46,26 @@ export const wishas = () => {
                 </li>`;
     };
 
-    let lengthComentar = 0; // Initialize lengthComentar
+    let lengthComment = 0; // Initialize lengthComment
 
-    const initialComentar = async () => {
-        containerComentar.innerHTML = `<h1 style="font-size: 1rem; margin: auto">Loading...</h1>`;
-        peopleComentar.textContent = '...';
+    const initialComment = async () => {
+        containerComment.innerHTML = `<h1 style="font-size: 1rem; margin: auto">Loading...</h1>`;
+        peopleComment.textContent = '...';
         pageNumber.textContent = '..';
 
         try {
-            const response = await comentarService.getComentar();
-            const {comentar} = response;
+            const response = await commentService.getComment();
+            const {comment} = response;
 
-            lengthComentar = comentar.length;
-            comentar.reverse();
+            lengthComment = comment.length;
+            comment.reverse();
 
-            peopleComentar.textContent = comentar.length > 0 ? `${comentar.length} orang telah mengucapkan` : 'Belum ada yang mengucapkan';
+            peopleComment.textContent = comment.length > 0 ? `${comment.length} orang telah mengucapkan` : 'Belum ada yang mengucapkan';
             pageNumber.textContent = '1';
 
-            renderElement(comentar.slice(startIndex, endIndex), containerComentar, listItemComentar);
+            renderElement(comment.slice(startIndex, endIndex), containerComment, listItemComment);
         } catch (error) {
-            peopleComentar.textContent = 'Error loading comments';
+            peopleComment.textContent = 'Error loading comments';
             console.error('Error loading comments:', error);
         }
     };
@@ -79,7 +79,7 @@ export const wishas = () => {
         // Check if the phone number starts with '+6'
         const formattedPhone = phoneNumber.startsWith('+6') ? phoneNumber : '+6' + phoneNumber;
 
-        const comentar = {
+        const comment = {
             id: generateRandomId(),
             name: e.target.name.value,
             phone: formattedPhone, // Use the formatted phone number
@@ -91,13 +91,13 @@ export const wishas = () => {
         };
 
         try {
-            const response = await comentarService.getComentar();
-            await comentarService.addComentar(comentar);
+            const response = await commentService.getComment();
+            await commentService.addComment(comment);
 
-            lengthComentar = response.comentar.length;
+            lengthComment = response.comment.length;
 
-            peopleComentar.textContent = `${++response.comentar.length} orang telah mengucapkan`;
-            containerComentar.insertAdjacentHTML('afterbegin', listItemComentar(comentar));
+            peopleComment.textContent = `${++response.comment.length} orang telah mengucapkan`;
+            containerComment.insertAdjacentHTML('afterbegin', listItemComment(comment));
         } catch (error) {
             console.error('Error submitting comment:', error);
             buttonForm.textContent = 'Error, try again';
@@ -114,18 +114,18 @@ export const wishas = () => {
     let endIndex = itemsPerPage;
 
     const updatePageContent = async () => {
-        containerComentar.innerHTML = '<h1 style="font-size: 1rem; margin: auto">Loading...</h1>';
+        containerComment.innerHTML = '<h1 style="font-size: 1rem; margin: auto">Loading...</h1>';
         pageNumber.textContent = '..';
         prevButton.disabled = true;
         nextButton.disabled = true;
 
         try {
-            const response = await comentarService.getComentar();
-            const {comentar} = response;
+            const response = await commentService.getComment();
+            const {comment} = response;
 
-            comentar.reverse();
+            comment.reverse();
 
-            renderElement(comentar.slice(startIndex, endIndex), containerComentar, listItemComentar);
+            renderElement(comment.slice(startIndex, endIndex), containerComment, listItemComment);
             pageNumber.textContent = currentPage.toString();
         } catch (error) {
             console.log('Error loading comments:', error);
@@ -136,7 +136,7 @@ export const wishas = () => {
     };
 
     nextButton.addEventListener('click', async () => {
-        if (endIndex < lengthComentar) {
+        if (endIndex < lengthComment) {
             currentPage++;
             startIndex = (currentPage - 1) * itemsPerPage;
             endIndex = startIndex + itemsPerPage;
@@ -175,5 +175,5 @@ export const wishas = () => {
     // Initial check in case the form is pre-filled with 'Tidak Hadir'
     checkStatus();
 
-    initialComentar();
+    initialComment();
 };
