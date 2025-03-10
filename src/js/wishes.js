@@ -40,10 +40,19 @@ export const wishes = () => {
                     <div style="background-color: ${data.color}">${data.name.charAt(0).toUpperCase()}</div>
                     <div>
                         <h4>${name}</h4>
-                        <p>${date} <br>${data.status}</p>
+                        <p>${date}</p>
                         <p>${data.message}</p>
                     </div>
                 </li>`;
+
+        // return `<li data-aos="zoom-in" data-aos-duration="1000">
+        //         <div style="background-color: ${data.color}">${data.name.charAt(0).toUpperCase()}</div>
+        //         <div>
+        //             <h4>${name}</h4>
+        //             <p>${date} <br>${data.status}</p>
+        //             <p>${data.message}</p>
+        //         </div>
+        //     </li>`;
     };
 
     let lengthComment = 0; // Initialize lengthComment
