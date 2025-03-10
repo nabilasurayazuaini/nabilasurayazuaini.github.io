@@ -25,7 +25,7 @@ export const data = {
     time: {
         marriage: {
             year: '2025',
-            month: 'May',
+            month: 'Mei',
             date: '3',
             day: 'Sabtu',
             hours: {
@@ -35,12 +35,12 @@ export const data = {
         },
         reception: {
             year: '2025',
-            month: 'May',
+            month: 'Mei',
             date: '3',
             day: 'Sabtu',
             hours: {
-                start: '7:30 PM',
-                finish: '11:00 PM'
+                start: '7:30 malam',
+                finish: '11:00 malam'
             }
         },
         address: 'Premiera Hotel Kuala Lumpur'
