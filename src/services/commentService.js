@@ -8,7 +8,14 @@ export const commentService = {
             if (!response.ok) {
                 throw new Error(`Failed to fetch: ${response.statusText}`);
             }
-            return await response.json();
+            const comments = await response.json()
+            const filteredComments = comments.comment.filter(comment => comment.message.trim() !== '');
+            const result = {
+              status: 200,
+              message: "Success to capture data",
+              comment: filteredComments
+            };            
+            return result;
         } catch (error) {
             return { error: error.message || 'An unknown error occurred' };
         }
