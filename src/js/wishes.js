@@ -59,7 +59,8 @@ export const wishes = () => {
 
     const initialComment = async () => {
         containerComment.innerHTML = `<h1 style="font-size: 1rem; margin: auto">Loading...</h1>`;
-        peopleComment.textContent = '...';
+        peopleComment.innerHTML = `<h3 style="font-size: 35px; font-family: var(--sacramento); font-weight: 400; margin-bottom: 20px;">Ucapan<h3>`;
+        // peopleComment.textContent = `Ucapan`;
         pageNumber.textContent = '..';
 
         try {
@@ -70,7 +71,8 @@ export const wishes = () => {
             comment.reverse();
 
             // peopleComment.textContent = comment.length > 0 ? `${comment.length} orang telah mengucapkan` : 'Belum ada yang mengucapkan';
-            peopleComment.textContent = '';
+            // peopleComment.textContent = '';
+            // peopleComment.textContent = 'Ucapan';
             pageNumber.textContent = '1';
 
             renderElement(comment.slice(startIndex, endIndex), containerComment, listItemComment);
@@ -154,7 +156,7 @@ export const wishes = () => {
 
             if (comment.message.trim() === '') { return; }
             // peopleComment.textContent = `${++response.comment.length} orang telah mengucapkan`;
-            peopleComment.textContent = '';
+            // peopleComment.textContent = 'Ucapan';
             containerComment.insertAdjacentHTML('afterbegin', listItemComment(comment));
         } catch (error) {
             console.error('Error submitting comment:', error);
