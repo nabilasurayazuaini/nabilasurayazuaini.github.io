@@ -7,8 +7,12 @@
         bottom: -5rem;
     }
 
-    .bride, .time{
+    .bride{
         padding: 6rem 1.4rem 8rem;
+    }
+
+    .time{
+        padding: 2rem 1.4rem 8rem;
     }
 
     .bride h2, .bride h3 {

@@ -9,9 +9,10 @@ export const home = () => {
         const {L: {alias: brideLName}, P: {alias: bridePName}, couple: coupleImage} = bride;
         return `
             <img src="${coupleImage}" alt="couple animation">
+            <div style="margin: 20px;">
             <figcaption>
                 ${bridePName} & ${brideLName}
-            </figcaption>`;
+            </figcaption></div>`;
     };
 
     const generateTimeContent = ({time}) => {
