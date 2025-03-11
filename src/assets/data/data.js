@@ -110,8 +110,8 @@ export const data = {
         },
         {
             id: 3,
-            teks: 'Masa',
-            icon: 'bx bxs-calendar-check',
+            teks: 'Lokasi',
+            icon: 'bx bxs-map-pin',
             path: '#time',
         },
         {

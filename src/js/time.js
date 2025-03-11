@@ -57,11 +57,11 @@ export const time = () => {
     );
 
     // marriageDiv.innerHTML = createTimeListItem('Akad', data.time.marriage);
-    receptionDiv.innerHTML = createTimeListItem('Resepsi', data.time.reception);
+    // receptionDiv.innerHTML = createTimeListItem('Resepsi', data.time.reception);
+    // startCountdown(countdownTime, data.time);
 
     // addressParagraph.textContent = data.time.address;
     mapWazeLink.href = data.link.map.waze;
     mapGooglemapLink.href = data.link.map.googlemap;
 
-    startCountdown(countdownTime, data.time);
 };
