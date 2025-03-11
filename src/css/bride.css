@@ -48,12 +48,12 @@
 
 .bride .bride_couple li figure figcaption {
     font-size: var(--fontSize-heading-base);
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     font-family: var(--sacramento);
 }
 
 .bride .bride_couple span {
-    font-size: 3.4rem;
+    font-size: 2rem;
     font-family: var(--sacramento);
     font-weight: 400;
     margin-top: 1rem;
