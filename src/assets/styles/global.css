@@ -7,7 +7,8 @@
     --fontSize-text-base: 1rem;
 
     --sacramento: Sacramento, cursive;
-    --arabic: 'Noto Naskh Arabic', serif;
+    /* --arabic: 'Noto Naskh Arabic', serif; */
+    --arabic: 'Amiri', serif;
 
     --shadow-md: 0 0 10px rgba(0, 0, 0, 0.3);
 
@@ -72,7 +73,7 @@ p {
     animation: rotate 3s linear infinite;
 }
 
-.time-islamic {
+.font-dim {
     font-size: 1.0rem;
     color: #777;
 }

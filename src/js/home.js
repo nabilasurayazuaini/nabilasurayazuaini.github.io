@@ -17,12 +17,9 @@ export const home = () => {
     const generateTimeContent = ({time}) => {
         const {year, month, date, day} = time.marriage;
         return `
-        <time datetime="${year}-${String(monthNameToNumber(month)).padStart(2, '0')}-${String(date).padStart(2, '0')}">
+        <time style="margin-bottom: 20px" datetime="${year}-${String(monthNameToNumber(month)).padStart(2, '0')}-${String(date).padStart(2, '0')}">
             ${day}, ${date} ${month} ${year}
-        </time>
-        <br/>
-        <br/>
-        <span class="time-islamic">6 Zulkaedah 1446H</span>`;
+        </time>`;
     };
 
     const generateCountdownMarkup = (days, hours, minutes, seconds) => {
@@ -69,8 +66,8 @@ export const home = () => {
         const {bride, time, link} = data;
         figureElement.innerHTML = generateFigureContent({bride});
         timeElement.innerHTML = generateTimeContent({time});
-        calendarAnchor.href = link.calendar;
-        startCountdown(homeTime, time);
+        // calendarAnchor.href = link.calendar;
+        // startCountdown(homeTime, time);
     };
 
     initializeHome();
