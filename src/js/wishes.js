@@ -79,15 +79,54 @@ export const wishes = () => {
         }
     };
 
+    // form.addEventListener('submit', async (e) => {
+    //     e.preventDefault();
+    //     buttonForm.textContent = 'Loading...';
+
+    //     const phoneNumber = e.target.phone.value;
+
+    //     // Check if the phone number starts with '+6'
+    //     const formattedPhone = phoneNumber.startsWith('+6') ? phoneNumber : '+6' + phoneNumber;
+
+    //     const comment = {
+    //         id: generateRandomId(),
+    //         name: e.target.name.value,
+    //         phone: formattedPhone, // Use the formatted phone number
+    //         status: e.target.status.value === 'y' ? 'Hadir' : 'Tidak Hadir',
+    //         pax: e.target.pax.value,
+    //         message: e.target.message.value,
+    //         date: getCurrentDateTime(),
+    //         color: generateRandomColor(),
+    //     };
+
+    //     try {
+    //         const response = await commentService.getComment();
+    //         await commentService.addComment(comment);
+
+    //         lengthComment = response.comment.length;
+
+    //         peopleComment.textContent = `${++response.comment.length} orang telah mengucapkan`;
+    //         containerComment.insertAdjacentHTML('afterbegin', listItemComment(comment));
+    //     } catch (error) {
+    //         console.error('Error submitting comment:', error);
+    //         buttonForm.textContent = 'Error, try again';
+    //     } finally {
+    //         buttonForm.textContent = 'Hantar';
+    //         form.reset();
+    //     }
+    // });
+
+    // Pagination logic
+ 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         buttonForm.textContent = 'Loading...';
-
+    
         const phoneNumber = e.target.phone.value;
-
+    
         // Check if the phone number starts with '+6'
         const formattedPhone = phoneNumber.startsWith('+6') ? phoneNumber : '+6' + phoneNumber;
-
+    
         const comment = {
             id: generateRandomId(),
             name: e.target.name.value,
@@ -98,13 +137,21 @@ export const wishes = () => {
             date: getCurrentDateTime(),
             color: generateRandomColor(),
         };
-
+    
+    
         try {
             const response = await commentService.getComment();
             await commentService.addComment(comment);
-
+    
             lengthComment = response.comment.length;
 
+            // // Check if the message is not empty before adding it
+            // if (comment.message.trim() === '') {
+            //     console.log('Empty message, not adding comment.');
+            //     return;  // Stop execution if message is empty
+            // }
+
+            if (comment.message.trim() === '') { return; }
             peopleComment.textContent = `${++response.comment.length} orang telah mengucapkan`;
             containerComment.insertAdjacentHTML('afterbegin', listItemComment(comment));
         } catch (error) {
@@ -115,8 +162,8 @@ export const wishes = () => {
             form.reset();
         }
     });
-
-    // Pagination logic
+    
+ 
     let currentPage = 1;
     let itemsPerPage = 4;
     let startIndex = 0;
