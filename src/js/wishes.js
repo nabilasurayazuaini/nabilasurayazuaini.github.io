@@ -69,7 +69,8 @@ export const wishes = () => {
             lengthComment = comment.length;
             comment.reverse();
 
-            peopleComment.textContent = comment.length > 0 ? `${comment.length} orang telah mengucapkan` : 'Belum ada yang mengucapkan';
+            // peopleComment.textContent = comment.length > 0 ? `${comment.length} orang telah mengucapkan` : 'Belum ada yang mengucapkan';
+            peopleComment.textContent = '';
             pageNumber.textContent = '1';
 
             renderElement(comment.slice(startIndex, endIndex), containerComment, listItemComment);
@@ -152,7 +153,8 @@ export const wishes = () => {
             // }
 
             if (comment.message.trim() === '') { return; }
-            peopleComment.textContent = `${++response.comment.length} orang telah mengucapkan`;
+            // peopleComment.textContent = `${++response.comment.length} orang telah mengucapkan`;
+            peopleComment.textContent = '';
             containerComment.insertAdjacentHTML('afterbegin', listItemComment(comment));
         } catch (error) {
             console.error('Error submitting comment:', error);

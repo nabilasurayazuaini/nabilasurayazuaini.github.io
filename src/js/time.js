@@ -52,7 +52,7 @@ export const time = () => {
 
     const createTimeListItem = (title, details) => (
         `<h3>${title}</h3>
-         <p>${details.day}, ${details.date} ${details.month} ${details.year} <br> 
+         <p><b>${details.day}, ${details.date} ${details.month} ${details.year}</b> <br> 
          ${details.hours.start} sehingga ${details.hours.finish}</p>`
     );
 

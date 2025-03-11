@@ -14,15 +14,15 @@ export const navbar = () => {
 
     renderElement(data.navbar, containerNavbar, listItemNavbar);
 
-    let lastScrollY = window.scrollY;
+    // let lastScrollY = window.scrollY;
 
-    document.addEventListener('scroll', () => {
-        const currentScrollY = window.scrollY;
-        if (currentScrollY < lastScrollY) {
-            containerNavbar.classList.remove('scroll');
-        } else {
-            containerNavbar.classList.add('scroll');
-        }
-        lastScrollY = currentScrollY;
-    });
+    // document.addEventListener('scroll', () => {
+    //     const currentScrollY = window.scrollY;
+    //     if (currentScrollY < lastScrollY) {
+    //         containerNavbar.classList.remove('scroll');
+    //     } else {
+    //         containerNavbar.classList.add('scroll');
+    //     }
+    //     lastScrollY = currentScrollY;
+    // });
 }
