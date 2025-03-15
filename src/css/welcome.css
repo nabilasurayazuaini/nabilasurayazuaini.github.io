@@ -6,7 +6,13 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-color: #212529;
+    background-color: #141e46;
+    background-image: url("../assets/images/bg.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,7 +21,6 @@
     z-index: 99;
     color: #fff;
     transition: all 2s ease-in;
-    opacity: 0;
     transform: translateY(-100%);
 }
 

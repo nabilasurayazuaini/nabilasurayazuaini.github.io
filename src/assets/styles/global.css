@@ -1,6 +1,9 @@
 :root {
-    --primary-font-color: '#212529';
-    --bg-color: #f8f9fa;
+    --primary-font-color: #2c3d82;
+    /* --primary-font-color: #686464; */
+    /* --primary-font-color: #141e46; */
+    /* --bg-color: #f8f9fa; */
+    --bg-color: #eaf5ff;
 
     --fontSize-heading-lg: 3rem;
     --fontSize-heading-base: 2.8rem;
@@ -44,6 +47,19 @@ body::-webkit-scrollbar {
 
 p {
     line-height: 1.7rem;
+}
+
+object {
+    width: 100%;
+    height: 100vh;
+}
+
+object svg path {
+    fill: red; /* Change the color of paths inside the SVG */
+}
+
+hr {
+    border: solid 0.05rem #ccc;
 }
 
 .audio button {
