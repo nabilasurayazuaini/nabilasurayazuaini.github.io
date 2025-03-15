@@ -13,10 +13,11 @@ export const wishes = () => {
     const wishesContainer = document.querySelector('.wishes');
     if (!wishesContainer) return; // Ensure .wishes exists before continuing
 
-    const form = wishesContainer.children[3]?.children[3];
+    const form = wishesContainer.children[1]?.children[3];
+    // console.log(wishesContainer.children[1].children);
     if (!form) return; // Ensure the form exists
 
-    const [peopleComment, ___, containerComment] = wishesContainer.children[3].children;
+    const [peopleComment, ___, containerComment] = wishesContainer.children[2].children;
     const buttonForm = form.children[10];
     const pageNumber = wishesContainer.querySelector('.page-number');
     const [prevButton, nextButton] = wishesContainer.querySelectorAll('.button-grup button');
