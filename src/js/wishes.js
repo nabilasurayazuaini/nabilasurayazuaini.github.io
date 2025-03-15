@@ -82,45 +82,6 @@ export const wishes = () => {
             console.error('Error loading comments:', error);
         }
     };
-
-    // form.addEventListener('submit', async (e) => {
-    //     e.preventDefault();
-    //     buttonForm.textContent = 'Loading...';
-
-    //     const phoneNumber = e.target.phone.value;
-
-    //     // Check if the phone number starts with '+6'
-    //     const formattedPhone = phoneNumber.startsWith('+6') ? phoneNumber : '+6' + phoneNumber;
-
-    //     const comment = {
-    //         id: generateRandomId(),
-    //         name: e.target.name.value,
-    //         phone: formattedPhone, // Use the formatted phone number
-    //         status: e.target.status.value === 'y' ? 'Hadir' : 'Tidak Hadir',
-    //         pax: e.target.pax.value,
-    //         message: e.target.message.value,
-    //         date: getCurrentDateTime(),
-    //         color: generateRandomColor(),
-    //     };
-
-    //     try {
-    //         const response = await commentService.getComment();
-    //         await commentService.addComment(comment);
-
-    //         lengthComment = response.comment.length;
-
-    //         peopleComment.textContent = `${++response.comment.length} orang telah mengucapkan`;
-    //         containerComment.insertAdjacentHTML('afterbegin', listItemComment(comment));
-    //     } catch (error) {
-    //         console.error('Error submitting comment:', error);
-    //         buttonForm.textContent = 'Error, try again';
-    //     } finally {
-    //         buttonForm.textContent = 'Hantar';
-    //         form.reset();
-    //     }
-    // });
-
-    // Pagination logic
  
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -136,7 +97,7 @@ export const wishes = () => {
             name: e.target.name.value,
             phone: formattedPhone, // Use the formatted phone number
             status: e.target.status.value === 'y' ? 'Hadir' : 'Tidak Hadir',
-            pax: e.target.pax.value,
+            pax: e.target.status.value === 'y' ? e.target.pax.value : 0 ,
             message: e.target.message.value,
             date: getCurrentDateTime(),
             color: generateRandomColor(),
