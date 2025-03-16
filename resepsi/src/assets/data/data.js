@@ -7,7 +7,7 @@ export const data = {
             child: 'Putera Pertama',
             father: 'Mazlan bin Mahmud',
             mother: 'Tuan Nurlaili binti Tuan Mat',
-            image: './resepsi/src/assets/images/groom.jpeg'
+            image: './src/assets/images/groom.jpeg'
         },
         P: {
             id: 2,
@@ -16,10 +16,10 @@ export const data = {
             child: 'Puteri Pertama',
             father: 'Allahyarham Zuaini bin Akin',
             mother: 'Norazan binti Sidek',
-            image: './resepsi/src/assets/images/bride.jpeg'
+            image: './src/assets/images/bride.jpeg'
         },
 
-        couple: './resepsi/src/assets/images/couple.jpeg'
+        couple: './src/assets/images/couple.jpeg'
     },
 
     time: {
@@ -57,23 +57,23 @@ export const data = {
     galeri: [
         {
             id: 1,
-            image: './resepsi/src/assets/images/1.png'
+            image: './src/assets/images/1.png'
         },
         {
             id: 2,
-            image: './resepsi/src/assets/images/2.png'
+            image: './src/assets/images/2.png'
         },
         {
             id: 3,
-            image: './resepsi/src/assets/images/3.png'
+            image: './src/assets/images/3.png'
         },
         {
             id: 4,
-            image: './resepsi/src/assets/images/4.png'
+            image: './src/assets/images/4.png'
         },
         {
             id: 5,
-            image: './resepsi/src/assets/images/5.png'
+            image: './src/assets/images/5.png'
         }
     ],
 
@@ -81,18 +81,18 @@ export const data = {
         {
             id: 1,
             name: 'Lorem Ipsum',
-            icon: './resepsi/src/assets/images/bca.png',
+            icon: './src/assets/images/bca.png',
             rekening: '12345678'
         },
         {
             id: 2,
             name: 'Ipsum Lorem',
-            icon: './resepsi/src/assets/images/bri.png',
+            icon: './src/assets/images/bri.png',
             rekening: '12345678'
         },
     ],
 
-    audio: './resepsi/src/assets/audio/wedding.mp3',
+    audio: './src/assets/audio/wedding.mp3',
     api: 'https://script.google.com/macros/s/AKfycbyiAYy_Dagj5W6snDp7yD7MFKFRE_Kb8y0l33cn8h473tH9MrUP2jLcOJDvk4ssEDnAPA/exec',
 
     navbar: [
