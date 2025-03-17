@@ -113,11 +113,5 @@ export const data = {
             icon: 'bx bxs-map-pin',
             path: '#time',
         },
-        {
-            id: 4,
-            teks: 'RSVP',
-            icon: 'bx bxs-message-rounded-dots',
-            path: '#wishes',
-        },
     ],
 }

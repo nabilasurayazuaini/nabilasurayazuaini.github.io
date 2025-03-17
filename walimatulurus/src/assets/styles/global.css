@@ -10,7 +10,9 @@
     --fontSize-heading-base: 2.8rem;
     --fontSize-text-base: 1rem;
 
-    --sacramento: Sacramento, cursive;
+    --sacramento: "Great Vibes", cursive;
+    /* --sacramento: "Markazi Text", serif; */
+    /* --sacramento: Sacramento, cursive; */
     /* --arabic: 'Noto Naskh Arabic', serif; */
     --arabic: 'Amiri', serif;
 
@@ -48,15 +50,6 @@ body::-webkit-scrollbar {
 
 p {
     line-height: 1.7rem;
-}
-
-object {
-    width: 100%;
-    height: 100vh;
-}
-
-object svg path {
-    fill: red; /* Change the color of paths inside the SVG */
 }
 
 hr {

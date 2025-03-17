@@ -6,7 +6,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    /* background-color: #141e46; */
+    background-color: #f1f1f1;
     background-image: url("../assets/images/bg.png");
     background-size: 100% 100%;
     background-position: center center;
@@ -75,7 +75,9 @@
     align-items: inherit;
     justify-content: inherit;
     gap: 0.4rem;
-    color: #000;
+    color: #666;
+    background: #e8e7e7;
+    /* color: #004aad; */
     padding: 0.5rem 1rem;
     border: none;
     transition: var(--transition-small);

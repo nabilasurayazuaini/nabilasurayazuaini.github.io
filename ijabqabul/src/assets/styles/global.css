@@ -11,8 +11,7 @@
     --fontSize-heading-base: 2.8rem;
     --fontSize-text-base: 1rem;
 
-    --sacramento: Sacramento, cursive;
-    /* --arabic: 'Noto Naskh Arabic', serif; */
+    --sacramento: "Great Vibes", cursive;
     --arabic: 'Amiri', serif;
 
     --shadow-md: 0 0 10px rgba(0, 0, 0, 0.3);
