@@ -41,6 +41,12 @@
     font-size: var(--fontSize-heading-lg);
 }
 
+.home figure figcaption span {
+    font-size: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .home h3 {
     font-weight: 500;
 }

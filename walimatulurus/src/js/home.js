@@ -11,7 +11,7 @@ export const home = () => {
             <img src="${coupleImage}" alt="couple animation">
             <div style="margin: 20px;">
             <figcaption>
-                ${bridePName} & ${brideLName}
+                ${bridePName} <span>&</span> ${brideLName}
             </figcaption></div>`;
     };
 
