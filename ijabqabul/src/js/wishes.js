@@ -85,7 +85,7 @@ export const wishes = () => {
  
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        buttonForm.textContent = 'Loading...';
+        buttonForm.textContent = '.....';
     
         const phoneNumber = e.target.phone.value;
     
