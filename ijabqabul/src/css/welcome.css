@@ -7,7 +7,8 @@
     flex-direction: column;
     text-align: center;
     /* background-color: #141e46; */
-    background-image: url("../assets/images/bg.png");
+    background-color: #faf9f6;
+    background-image: url("../assets/images/bg.svg");
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -19,7 +20,8 @@
     right: 0;
     bottom: 0;
     z-index: 99;
-    color: #c6b571;
+    color: #595959;
+    /* color: #c6b571; */
     transition: all 2s ease-in;
     transform: translateY(-100%);
 }
@@ -61,7 +63,7 @@
     font-size: var(--fontSize-heading-base);
     font-family: var(--sacramento);
     font-weight: 400;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
 }
 
 .welcome figure figcaption span {
