@@ -42,7 +42,7 @@ export const wishes = () => {
                     <div>
                         <h4>${name}</h4>
                         <p>${date}</p>
-                        <p>${data.message}</p>
+                        <p style="line-height:1.2rem">${data.message}</p>
                     </div>
                 </li>`;
 
@@ -131,7 +131,7 @@ export const wishes = () => {
     
  
     let currentPage = 1;
-    let itemsPerPage = 4;
+    let itemsPerPage = 3;
     let startIndex = 0;
     let endIndex = itemsPerPage;
 
